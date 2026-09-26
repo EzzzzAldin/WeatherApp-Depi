@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moonfall Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&family=Cormorant+Garamond:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="bgLayer" class="bg-layer night-normal"></div>
+    <div class="overlay"></div>
+
+    <div class="petals" aria-hidden="true">
+      <span></span><span></span><span></span><span></span> <span></span
+      ><span></span><span></span><span></span>
+    </div>
+
+    <main class="page">
+      <header class="site-header">
+        <h1 class="site-title">Moonfall Weather</h1>
+        <p class="site-subtitle">Check the weather, anywhere.</p>
+      </header>
+
+      <form id="searchForm" class="search-form">
+        <input
+          type="text"
+          id="cityInput"
+          class="search-input"
+          placeholder="Enter a city name..."
+          autocomplete="off"
+        />
+        <button type="submit" id="searchBtn" class="search-btn">Search</button>
+      </form>
+
+      <section id="resultCard" class="result-card">
+        <p class="result-city" id="resultCity">City, Country</p>
+        <p class="result-temp" id="resultTemp">--°C</p>
+        <p class="result-condition" id="resultCondition">Condition</p>
+      </section>
+
+      <p id="statusText" class="status-text"></p>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
